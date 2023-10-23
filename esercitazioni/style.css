@@ -1,0 +1,43 @@
+body, button {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: fit-content;
+    margin-top: 48px;
+}
+
+hr {
+    width: 296px;
+    margin-top: 28px;
+}
+
+button {
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#anagraphics, #contacts {
+    text-align: center;
+}
+
+#anagraphics ul {
+    text-align: left;
+    max-width: fit-content;
+    margin: 0 auto 24px auto;
+}
+
+.near {
+    display: inline-block;
+}

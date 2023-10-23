@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>We steal your data form</title>
+  </head>
+  <body>
+    <header>
+      <img
+        height="150px"
+        src="https://img.freepik.com/free-vector/red-velvet-cake-concept-illustration_114360-13193.jpg?w=1380&t=st=1698069270~exp=1698069870~hmac=5e56c3a1805c0a0154ca5efcbd7e73e873461c47361de9d85434822b0191d66f"
+        alt="logo image"
+      />
+      <nav style="display: inline-block">
+        <a href="#">Home</a>
+        <a href="#">What do we do</a>
+        <a href="#">Support</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Best form in the world</h1>
+      <h2>Welcome, fill in the form to let us steal your data!</h2>
+      <form style="width: 500px">
+        <fieldset>
+          <legend>Who are you?</legend>
+          <div>
+            <label
+              >Name:
+              <input
+                type="text"
+                name="name"
+                placeholder="What's your name?"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label
+              >Surname:
+              <input
+                type="text"
+                name="surname"
+                placeholder="What's your surname?"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label
+              >Address:
+              <input
+                type="text"
+                name="address"
+                placeholder="Where do you live?"
+                required
+              />
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your age</legend>
+          <input name="age" id="18-25" type="radio" required />
+          <label for="18-25">18-25</label>
+          <input name="age" id="26-35" type="radio" />
+          <label for="26-35">26-35</label>
+          <input name="age" id="36-45" type="radio" />
+          <label for="36-45">36-45</label>
+          <input name="age" id="more" type="radio" />
+          <label for="more">46 or more</label>
+        </fieldset>
+        <fieldset>
+          <legend>Your hobbies</legend>
+          <input name="drawing" id="drawing" type="checkbox" />
+          <label for="drawing">Drawing</label>
+          <input name="sport" id="sport" type="checkbox" />
+          <label for="sport">Sport</label>
+          <input name="music" id="music" type="checkbox" />
+          <label for="music">Music</label>
+        </fieldset>
+        <button
+          type="submit"
+          onclick="alert('Sent! Thanks for sharing your data with us <3')"
+        >
+          Send
+        </button>
+        <button type="submit">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        Follow us on our social media: <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">TikTok</a>
+      </p>
+      <p>
+        <a href="#">Conditions of Use</a> | <a href="#">Privacy Policy</a> |
+        <a href="#">Ads</a>
+      </p>
+    </footer>
+  </body>
+</html>
