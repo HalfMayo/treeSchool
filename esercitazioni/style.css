@@ -41,3 +41,45 @@ a {
 .near {
     display: inline-block;
 }
+/* seleziona tutti i figli del div */
+div.papa > p {
+    color: red;
+    font-weight: 600;
+}
+/* seleziona il primo p figlio del div */
+div.uncle > p:first-child {
+    display: inline-block;
+}
+/* seleziona il fratello adicente a ogni elemento p */
+div.papa p + p {
+    padding-left: 40px;
+}
+/* seleziona tutti i fratelli del primo p che incontra*/
+div.uncle p ~ p {
+    color: green;
+    font-weight: 700;
+}
+
+div.uncle:before, div.uncle > p:first-child:after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+div.uncle > p:first-child:after {
+    margin-left: 4px;
+}
+/* la classe da sola è meno specifica della selezione con i combinatori,
+perciò continuerà e essere visualizzato verde e meno bold
+(la tripletta, in questo caso, ha un valore inferiore: 0-1-0 < 0-1-3):
+id > class > tag element */
+.big {
+    color: yellow;
+    font-weight: 800;
+}
+
+/* stylesheet dell'utente ? > stylesheet dell'autore della pagina web > stylesheet del browser*/
+/* inline style > header style > ext stylesheet */
