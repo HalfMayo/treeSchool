@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="style_form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>We steal your data form</title>
   </head>
   <body>
@@ -13,19 +23,24 @@
         src="https://img.freepik.com/free-vector/red-velvet-cake-concept-illustration_114360-13193.jpg?w=1380&t=st=1698069270~exp=1698069870~hmac=5e56c3a1805c0a0154ca5efcbd7e73e873461c47361de9d85434822b0191d66f"
         alt="logo image"
       />
-      <nav style="display: inline-block">
+      <nav>
         <ul>
-          <li style="display: inline-block"><a href="#">Home</a></li>
-          <li style="display: inline-block"><a href="#">About</a></li>
-          <li style="display: inline-block"><a href="#">Support</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACTS US</a></li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
     </header>
     <main>
-      <h1>Best form in the world</h1>
-      <h2>Welcome, fill in the form to let us steal your data!</h2>
-      <form style="width: 500px">
-        <fieldset>
+      <div class="titles">
+        <h1>Best form in the world</h1>
+        <h2>Welcome, fill in the form to let us steal your data!</h2>
+      </div>
+      <form>
+        <fieldset id="anagraphics">
           <legend>Who are you?</legend>
           <div>
             <label
@@ -81,32 +96,35 @@
           <input name="music" id="music" type="checkbox" />
           <label for="music">Music</label>
         </fieldset>
-        <button
-          type="submit"
-          onclick="alert('Sent! Thanks for sharing your data with us <3')"
-        >
-          Send
-        </button>
-        <button type="submit">Reset</button>
+        <div class="buttons">
+          <button class="secondary" type="submit">Reset</button>
+          <button
+            class="primary"
+            type="submit"
+            onclick="alert('Sent! Thanks for sharing your data with us <3')"
+          >
+            Send
+          </button>
+        </div>
       </form>
     </main>
     <footer>
       <div>
-        <p>Follow us on our social media:</p>
+        <p class="strong">Follow us on our social media:</p>
         <ul>
-          <li style="display: inline-block"><a href="#">Facebook</a></li>
-          <li style="display: inline-block"><a href="#">Instagram</a></li>
-          <li style="display: inline-block"><a href="#">TikTok</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
         </ul>
       </div>
       <div>
-        <p>Legal stuff:</p>
+        <p class="strong">Legal stuff:</p>
         <ul>
-          <li style="display: inline-block">
+          <li>
             <a href="#">Conditions of Use</a>
           </li>
-          <li style="display: inline-block"><a href="#">Privacy policy</a></li>
-          <li style="display: inline-block"><a href="#">Ads</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Ads</a></li>
         </ul>
       </div>
     </footer>

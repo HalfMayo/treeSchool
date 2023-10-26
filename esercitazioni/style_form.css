@@ -1,0 +1,200 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    height: 100vh;
+  }
+
+  header, footer {
+    height: 15%;
+  }
+
+  nav ul {
+    gap: 50px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  form {
+    width: fit-content;
+  }
+
+  fieldset {
+    padding: 8px 16px 16px 16px;
+    border-radius: 4px;
+  }
+
+  fieldset div {
+    margin-bottom: 6px;
+  }
+
+  fieldset div:last-child {
+    margin-bottom: 0;
+  }
+
+  #anagraphics input {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+
+  #anagraphics {
+    padding-bottom: 20px;
+  }
+
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  button {
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  .primary {
+    background-color: rgb(27, 81, 101);
+    border: 1px solid rgb(27, 81, 101);
+    color: white;
+  }
+
+  .secondary {
+    background-color: white;
+    border: 1px solid rgb(27, 81, 101);
+    color: rgb(27, 81, 101);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(27, 81, 101);
+    color: white;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+  }
+
+  footer p {
+    margin: 8px 0 4px 0;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  .strong {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 680px) {
+    h2 {
+        margin: 0 20px;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav ul {
+        gap: 25px;
+      }      
+  }
+
+  @media screen and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      footer ul {
+        flex-wrap: wrap;
+      }
+  }
+
