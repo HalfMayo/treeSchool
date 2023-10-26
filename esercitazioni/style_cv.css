@@ -1,0 +1,105 @@
+html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      body,
+      button {
+        background-color: rgb(0, 4, 25);
+        color: rgb(255, 226, 248);
+        font-family: "Poppins", sans-serif;
+      }
+
+      main {
+        max-width: fit-content;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      img {
+        position: absolute;
+        clip-path: circle(40%);
+        height: 75px;
+        left: 7%;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      .title-layout {
+        position: relative;
+        padding: 0;
+      }
+
+      .buttons-row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      a {
+        color: rgb(255, 226, 248);
+        text-decoration: none;
+      }
+
+      .buttons-row li {
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+
+      .buttons-row li:hover {
+        background-color: rgb(48, 92, 130);
+        font-weight: 500;
+      }
+
+      #anagraphics li,
+      .buttons-row li {
+        list-style: none;
+      }
+
+      #anagraphics,
+      #contacts {
+        text-align: center;
+      }
+
+      #anagraphics ul {
+        text-align: left;
+        max-width: fit-content;
+        margin: 0 auto 24px auto;
+        padding: 0;
+      }
+
+      #anagraphics li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      #anagraphics p {
+        margin: 0;
+        padding: 4px 0;
+      }
+
+      hr {
+        width: 296px;
+        margin-top: 28px;
+      }
+
+      section > div {
+        padding-left: 16px;
+      }
