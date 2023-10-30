@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: #30475E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0 8px 0;
+    background-color: #30475E;
+}
+
+section {
+    height: 100vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Bangers, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h1, hgroup, .box, footer {
+    background-color: #F5F5F5;
+    border: 4px solid #121212;
+    border-radius: 4px;
+    padding:  16px 20px;
+}
+
+nav {
+    color:#F5F5F5;
+}
+
+p {
+    margin: 0;
+}
+
+hgroup p {
+    font-size: small;
+    margin-top: 8px;
+}
+
+#carousel {
+    width: 95vw;
+    height: 67.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #F5F5F5;
+    border: 4px solid #121212;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-top {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.card-bottom {
+    padding: 20px 20px 24px 20px;
+}
+
+.card-bottom p {
+    margin-top: 8px;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #F5F5F5;
+    color: #121212;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.left {
+    left: 2%;
+    padding-left: 8px;
+}
+
+.right {
+    right: 2%;
+}

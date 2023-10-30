@@ -1,0 +1,187 @@
+@import "variables.scss";
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: $primary;
+    @include flex-col-center;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 10;;
+    top: 0;
+    width: 100vw;
+    @include flex-row-center;
+    padding: 12px 0 8px 0;
+    background-color: $primary;
+}
+
+section {
+    height: 100vh;
+    width: 95vw;
+    @include flex-col-center;
+    gap: 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Bangers, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h1, hgroup, .box, footer {
+    background-color: $white;
+    border: 4px solid $black;
+    border-radius: 4px;
+    padding:  16px 20px;
+}
+
+nav {
+    color:$white;
+}
+
+p {
+    margin: 0;
+}
+
+hgroup p {
+    font-size: small;
+    margin-top: 8px;
+}
+
+
+#carousel {
+    width: 95vw;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.cards-list {
+    @include flex-row-center;
+    width: fit-content;
+}
+
+.card {
+    background-color: $white;
+    border: 4px solid $black;
+    border-radius: 4px;
+    width: 95vw;
+    height: fit-content;
+    
+}
+
+.card-top {
+    height: 50%;
+    width: 100%;
+    @include flex-row-center;
+    
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .cover {
+        object-fit: cover;
+    }
+}
+
+.card-bottom {
+    padding: 20px 20px 24px 20px;
+    @include flex-col-left;
+    gap: 12px;
+}
+
+.carousel-w-arrows {
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.left {
+    left: 2%;
+    padding-left: 8px;
+}
+
+.right {
+    right: 2%;
+}
+
+footer {
+    @include flex-col-center;
+    gap: 8px;
+    
+    ul {
+        @include flex-row-center;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: $black
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #carousel, .card {
+        width: 75vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #carousel, .card {
+        width: 65vw;
+    }
+
+    .cards-list {
+        gap: 5%;
+    }
+
+    .left {
+        left: -10%;
+    }
+    
+    .right {
+        right: -10%;
+    }
+
+    .card {
+        width: 48%;    
+    }
+}

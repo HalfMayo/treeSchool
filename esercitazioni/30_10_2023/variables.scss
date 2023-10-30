@@ -1,0 +1,24 @@
+$white: #F5F5F5;
+$black: #121212;
+$primary: #30475E;
+$highlight: #F05454;
+
+@mixin flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-col-center {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-col-left {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+}
