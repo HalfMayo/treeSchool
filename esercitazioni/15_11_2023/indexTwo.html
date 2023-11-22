@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="moreMargin" onclick="fetchCall()">
+      Send me stuff (fetch)
+    </button>
+    <p id="list" class="moreMargin"></p>
+    <button class="moreMargin" onclick="ajaxCall()">
+      Send me stuff (ajax)
+    </button>
+    <p id="listTwo" class="moreMargin marginBottom"></p>
+
+    <form id="login" class="moreMargin marginBottom">
+      <label>Username: <input id="username" name="username" required /></label>
+      <label>Password: <input id="password" name="password" required /></label>
+      <button type="submit">Submit (fetch)</button>
+    </form>
+
+    <form id="loginTwo" class="moreMargin marginBottom">
+      <label
+        >Username: <input id="usernameTwo" name="usernameTwo" required
+      /></label>
+      <label
+        >Password: <input id="passwordTwo" name="passwordTwo" required
+      /></label>
+      <button type="submit">Submit (ajax)</button>
+    </form>
+
+    <button
+      class="block moreMargin marginBottom"
+      onclick="swapiCall(Math.round(Math.random()*10))"
+    >
+      Swapi Species call
+    </button>
+
+    <div>
+      <label class="moreMargin marginBottom"
+        >Movie number <input id="movieNum" name="movieNum" type="number"
+      /></label>
+      <button onclick="chubeCheck()">Swapi call - Chewbacca check</button>
+    </div>
+
+    <div>
+      <label class="moreMargin marginBottom"
+        >Movie number <input id="movieNumTwo" name="movieNumTwo" type="number"
+      /></label>
+      <button onclick="planetList()">Swapi call - Planet list</button>
+    </div>
+
+    <div id="planetsList"></div>
+
+    <script src="scriptTwo.js"></script>
+  </body>
+</html>

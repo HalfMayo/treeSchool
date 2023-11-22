@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+div {
+    padding: 12px;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.better-h1 {
+    background-color: #00637C;
+    padding: 8px;
+}
+
+.better-better-h1 {
+    background-color: #005F5F;
+    padding: 12px;
+}

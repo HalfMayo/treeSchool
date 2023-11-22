@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+button {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#esOne, #esThree, #esFour, #searchForm, #addForm, #deleteForm {
+    margin-bottom: 2rem;
+}

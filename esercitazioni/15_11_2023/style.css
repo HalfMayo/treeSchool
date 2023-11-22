@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+div {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.moreMargin {
+    margin: 12px 0 0 12px;
+}
+
+.marginBottom {
+    margin-bottom: 12px;
+}
+
+.block {
+    display: block;
+}
